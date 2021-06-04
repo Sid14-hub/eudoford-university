@@ -104,7 +104,7 @@ nav .fa{
         z-index: 2;
         animation-name: r-l;
         animation-iteration-count: 1;
-        animation-duration: 2s;
+        animation-duration: 0.8s;
     }
     @keyframes r-l{
         0%{
@@ -112,14 +112,6 @@ nav .fa{
         }
         100%{
             right: 0;
-        }
-    }
-    @keyframes l-r{
-        0%{
-            right: 0;
-        }
-        100%{
-            right: -200px;
         }
     }
     nav .fa{
