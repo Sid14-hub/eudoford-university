@@ -24,7 +24,7 @@
                     <li> <a href="">CONTACT</a> </li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="hideMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -159,11 +159,12 @@
 <!-- Javascript for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.display="block";
-        }
         function hideMenu(){
+            if(navLinks.style.display=="block")
             navLinks.style.display="none";
+            else{
+                navLinks.style.display="block";
+            }
         }
     </script>
 </body>
