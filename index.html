@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="img/logo.png" alt=""></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times"id="btn_2"></i>
                 <ul>
                     <li> <a href="">HOME</a> </li>
                     <li> <a href="">ABOUT</a> </li>
@@ -24,7 +24,7 @@
                     <li> <a href="">CONTACT</a> </li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="hideMenu()"></i>
+            <i class="fa fa-bars" id="btn_1" ></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -156,16 +156,17 @@
     <p>Made with <i class="fa fa-heart"></i> by Easy Tutorials</p>
 </section>
 
-<!-- Javascript for toggle menu -->
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function hideMenu(){
-            if(navLinks.style.display=="block")
-            navLinks.style.display="none";
-            else{
-                navLinks.style.display="block";
-            }
-        }
-    </script>
+<!-- Javascript for toggle menu -->        
+<script>
+    const navLinks = document.getElementById("navLinks"); 
+    const btn1 = document.getElementById("btn_1");
+    const btn2 = document.getElementById("btn_2");
+    btn_1.addEventListener("click",() => {
+        navLinks.classList.toggle("active");
+    });
+    btn_2.addEventListener("click",() => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 </body>
 </html>

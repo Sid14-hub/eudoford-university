@@ -100,27 +100,12 @@ nav .fa{
         top: 0;
         right: 0px; 
         text-align: left;
-        display: none;
         z-index: 2;
-        animation-name: r-l;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
     }
-    @keyframes r-l{
-        0%{
-            right: -200px;
-        }
-        100%{
-            right: 0;
-        }
-    }
-    @keyframes l-r{
-        0%{
-            right: 0;
-        }
-        100%{
-            right: -200px;
-        }
+    .nav-links.active{
+        transform: translateX(0);
     }
     nav .fa{
         display: block;
