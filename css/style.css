@@ -48,7 +48,7 @@ nav img{
 .nav-links ul li a:hover::after{
     width: 100%;
 }
-/*Making the text to the center*/
+/*Making the text to the center--------*/
 .text-box{
     width: 90%;
     color: white;
